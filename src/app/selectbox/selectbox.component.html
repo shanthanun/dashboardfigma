@@ -1,0 +1,13 @@
+<div *ngIf="inputLabel">
+    <div class="input-field" style="position: relative;">
+      <select (focus)="onFocus()" (blur)="onBlur()" (change)="onChange($event)" required>
+        <option value="" disabled [selected]="!selectedValue">{{  '' }}</option>
+        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+      </select>
+      <label [class.focused]="isFocused || selectedValue">{{ inputLabel || ' ' }}</label>
+      <span>
+        <i class="fa fa-caret-down"></i>
+      </span>
+    </div>
+  </div>
+  

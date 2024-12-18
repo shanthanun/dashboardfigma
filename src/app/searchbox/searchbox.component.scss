@@ -1,0 +1,62 @@
+
+.input-field {
+  position: relative;
+}
+.input-field input {
+  width: 100%;
+  /* height: 60px; */
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #666;
+  border: 1px solid #707070 !important;
+  outline: none;
+}
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+input:focus {
+  border: 2px solid #ffcc00;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #ffffff;
+}
+input {
+  min-height: 2.5rem};
+  span{
+    position: absolute; right: 0.5rem; top: 50%; transform: translateY(-50%); pointer-events: none;
+    
+  }
+  .fa{
+    color: #80ABC3;
+  }
+  @media (max-width: 1024px) {
+    .input-field label {
+   
+        font-size: 0.6rem ;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .input-field label {
+   
+    font-size: 0.65rem !important;
+}
+}
+
+.fa{
+  color: #80ABC3;
+}

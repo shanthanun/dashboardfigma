@@ -1,0 +1,51 @@
+$color_1: #080808;
+$font-family_1: "Raleway", sans-serif;
+$background-color_1: #111;
+$background-color_2: #333;
+$background-color_3: #c50000;
+
+.heading {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: $font-family_1;
+	font-weight: 300;
+	font-size: 40px;
+	color: $color_1;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	h3 {
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 5px;
+			width: 55px;
+			background-color: $background-color_1;
+			background-color: $background-color_3;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 2px;
+			height: 1px;
+			width: 95%;
+			max-width: 255px;
+			background-color: $background-color_2;
+			background-color: $background-color_3;
+		}
+		font-size: 28px;
+		font-weight: 500;
+		letter-spacing: 0;
+		line-height: 1.5em;
+		padding-bottom: 15px;
+		position: relative;
+	}
+}
+.bodyDashboard{
+    padding: 1rem;
+}
+

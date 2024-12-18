@@ -1,0 +1,149 @@
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.switch-btn span {
+    display: flex;
+    align-items: center;
+    width: 2.4em;
+    height: 1.1em;
+    border-radius: 30px;
+    background-color: #ddd;
+    transition: 0.3s;
+    padding: 0 3px;
+    position: relative;
+}
+
+.switch-btn span::before {
+    content: '';
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 0.1em;
+    transition: 0.6s;
+}
+
+.switch-btn input {
+    display: none;
+}
+
+.switch-btn input:checked ~ span {
+    background-color: #02bcf0;
+}
+
+.switch-btn input:checked ~ span::before {
+    left: 1.4em;
+}
+.switch-btn{
+    display: flex;
+    color: #666;
+    justify-content: space-between;
+}
+.d-flex{
+    display: flex
+    ;
+        justify-content: center;
+}
+p{
+    margin-right: 0.5em;
+}
+
+.paddingClass{
+    padding: 0.5rem;
+}
+.bigCarret{
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+.smallCarret{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: #707070;
+    flex-direction: column;
+}
+.m-l{
+    margin-left: 1rem;
+}
+.small{
+    display: flex
+    ;
+        padding: 0.5rem;
+}
+.overflowVessel{
+    height: 42rem;
+    overflow-y: auto;
+}
+.maeginClass{
+    margin-bottom: 1rem;
+}

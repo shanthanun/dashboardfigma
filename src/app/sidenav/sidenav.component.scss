@@ -1,0 +1,111 @@
+.sidebar{
+    background: linear-gradient(to right, #1fadf9, #3CA6E0) !important;
+}
+.logo {
+  
+    width: 49px;
+    height: 49px;
+}
+.cat-sub-menu{
+    background-color: #2D83B1;
+}
+.open{
+    border-bottom:1px solid rgb(175 173 173);
+}
+.p-small{
+padding-top: 0.5rem;
+}
+.col-md-1_5{
+max-width: 12%;
+}
+.c-flex{
+    display: flex
+;
+    justify-content: center;
+}
+.d-flex{
+    display: flex
+    ;
+       
+        align-items: center;
+}
+.borderImage{
+    border: 1px solid #cacaca;
+}
+.col-12 img,.iconImage{
+    height: 2rem;
+    max-width: 2rem !important;
+}
+.p-flex{
+    padding-top: 0.5rem;
+}
+.col-md-1{
+    padding-right: 1px;
+    padding-left: 1px;
+}
+.col-md-1 img{
+    height: 2rem;
+}
+
+
+.box {
+    background-color: #fff;
+    border-left: 1px solid ;
+    counter-increment: item;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box::before {
+    
+    display: block;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(115deg, #fc00ff, #00dbde);
+  
+  }
+  .imge{
+    height: 2rem;
+    width: 2rem;
+  }
+  h4{
+    color: #939393;
+    font-size: 12px;
+  }
+  h6{
+    color: #939393;
+    font-size: 10px;
+  }
+  .noPadding{
+    padding: 0px !important;
+  }
+  .name{
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+  .avatars{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .border{
+    border-right: 1px solid #9a9a9a;
+  }
+  .ww{
+    background: #2D83B1;
+    width: 118%;
+    margin-left: -1.2rem;
+  }
+  .fa{
+    color: #80ABC3;
+  }
+  .paddingCustom{
+    padding-left: 3px;
+    padding-right: 15px;
+
+  }
+
+  h3{
+    color: white;
+}
